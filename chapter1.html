@@ -4,87 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Глава 1</title>
+
   <style>
-    :root{
-      --bg:#0f0f12;
-      --paper:#121218;
-      --text:#f2f2f2;
-      --muted:#b9b9c4;
-      --line:#2a2a33;
-      --box:#16161d;
-      --accent:#8aa2ff;
-    }
     body{
       margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height:1.9;
+      background:#ffffff;
+      color:#111;
+      font-family:"Times New Roman", Georgia, serif;
+      line-height:1.6;
       font-size:18px;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
     }
+
     .wrap{
-      max-width:760px;
+      max-width:42rem;      /* адаптивно, но не растягивается слишком широко */
       margin:0 auto;
-      padding:26px 18px 40px;
+      padding:30px 18px 44px;
     }
+
     .top{
       display:flex;
       align-items:center;
       justify-content:space-between;
       gap:12px;
-      margin-bottom:18px;
+      margin-bottom:14px;
     }
+
     .top a{
-      color:var(--accent);
+      color:#2f57ff;
       text-decoration:none;
       font-size:14px;
     }
+
+    .top span{
+      color:#666;
+      font-size:13px;
+    }
+
     h1{
       margin:10px 0 18px;
-      font-size:26px;
-      letter-spacing:0.2px;
+      font-size:24px;
+      font-weight:700;
+      text-align:center;
     }
-    .text{
-      background:transparent;
-    }
+
+    /* обычные абзацы - красная строка */
     p{
       margin:0 0 16px;
+      text-align:left;
+      text-indent:2em;      /* красная строка */
     }
+
+    /* ник по центру */
     .nick{
-      color:var(--muted);
+      text-align:center;
+      text-indent:0;
+      font-weight:700;
+      margin:18px 0 12px;
+    }
+
+    /* рамка */
+    .frame{
+      border:1.5px solid #333;
+      padding:18px 14px;
+      margin:28px auto 20px;
+    }
+
+    /* текст внутри рамки - по центру, без красной строки */
+    .frame p{
+      text-align:center;
+      text-indent:0;
+      margin:0;
       font-weight:700;
     }
+
     .system{
-      border:1px solid var(--line);
-      background:var(--box);
-      border-radius:14px;
+      border:1.2px solid #333;
       padding:14px 14px;
       margin:22px 0;
     }
+
     .system .label{
-      font-weight:800;
-      letter-spacing:0.3px;
-      margin-bottom:6px;
+      font-weight:700;
+      text-align:center;
+      margin:0 0 8px;
     }
-    .system .msg{
-      color:var(--text);
+
+    .system p{
       margin:0;
+      text-indent:0;
+      text-align:center; /* если хочешь системку тоже по центру */
     }
-    .hr{
-      height:1px;
-      background:var(--line);
-      margin:22px 0;
-    }
+
     .nav{
       display:flex;
       justify-content:space-between;
-      margin-top:22px;
+      margin-top:26px;
       gap:12px;
     }
+
     .nav a{
-      color:var(--accent);
+      color:#2f57ff;
       text-decoration:none;
       font-size:14px;
     }
@@ -95,36 +116,34 @@
   <div class="wrap">
     <div class="top">
       <a href="index.html">← к оглавлению</a>
-      <span style="color:var(--muted); font-size:13px;">Глава 1</span>
+      <span>Глава 1</span>
     </div>
 
     <h1>Глава 1</h1>
 
-    <div class="text">
-      <p>После экрана запуска перед Увоном появился его персонаж - здоровенный, прям в глаза бросается. Мускулы - как будто вырублены топором, тело поджарое. Когда персонаж двигался, по коже то проступала, то исчезала чешуя. Длинные, вертикально разрезанные зрачки в шрамах и клыки, которые едва виднелись из-под губ, плюс крылья - это всё выдавало класс Увона: "драконий рыцарь".</p>
+    <p>После экрана запуска перед Увоном появился его персонаж - здоровенный, прям в глаза бросается. Мускулы - как будто вырублены топором, тело поджарое. Когда персонаж двигался, по коже то проступала, то исчезала чешуя. Длинные, вертикально разрезанные зрачки в шрамах и клыки, которые едва виднелись из-под губ, плюс крылья - это всё выдавало класс Увона: "драконий рыцарь".</p>
 
-      <p class="nick">[УважайЭтикет]</p>
+    <p class="nick">[УважайЭтикет]</p>
 
-      <p>Под персонажем ярко мигал ник - будто просил "ну нажми уже".</p>
+    <p>Под персонажем ярко мигал ник - будто просил "ну нажми уже".</p>
 
-      <p>Увон, задумчиво прикусив губу, уставился на персонажа, постучал пальцами по столу и всё-таки ткнул "вход".</p>
+    <p>Увон, задумчиво прикусив губу, уставился на персонажа, постучал пальцами по столу и всё-таки ткнул "вход".</p>
 
-      <p>Как только он выбрал персонажа, драконий рыцарь, державший огромный меч, опустил клинок - и экран тут же сменился.</p>
+    <p>Как только он выбрал персонажа, драконий рыцарь, державший огромный меч, опустил клинок - и экран тут же сменился.</p>
 
-      <div class="hr"></div>
+    <div class="frame">
+      <p>Боги ушли - мир ушёл под воду</p>
+    </div>
 
-      <p><b>Боги ушли - мир ушёл под воду</b></p>
+    <p>Увона встретила густая темнота. В мрачной толще океана одна за другой поднимались пузырьки. Камера медленно подсветила крошечный клочок суши, и на экране всплыли пафосные строки.</p>
 
-      <p>Увона встретила густая темнота. В мрачной толще океана одна за другой поднимались пузырьки. Камера медленно подсветила крошечный клочок суши, и на экране всплыли пафосные строки.</p>
+    <p>Лишь Спаситель может поднять Veil и вернуть тело бога........</p>
 
-      <p>Лишь Спаситель может поднять Veil и вернуть тело бога........</p>
+    <p>Дзынь - раздался звук уведомления. Увон сам не заметил, как тихо усмехнулся.</p>
 
-      <p>Дзынь - раздался звук уведомления. Увон сам не заметил, как тихо усмехнулся.</p>
-
-      <div class="system">
-        <div class="label">[SYSTEM]</div>
-        <p class="msg">УважайЭтикет, мы вас ждали. Вот список обновлений на этой неделе!</p>
-      </div>
+    <div class="system">
+      <p class="label">[SYSTEM]</p>
+      <p>УважайЭтикет, мы вас ждали. Вот список обновлений на этой неделе!</p>
     </div>
 
     <div class="nav">
