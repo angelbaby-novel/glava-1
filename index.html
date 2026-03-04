@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новелла - оглавление</title>
+  <style>
+    :root{
+      --bg:#0f0f12;
+      --card:#17171c;
+      --text:#f2f2f2;
+      --muted:#b9b9c4;
+      --line:#2a2a33;
+      --accent:#8aa2ff;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height:1.85;
+      font-size:18px;
+    }
+    .wrap{
+      max-width:760px;
+      margin:0 auto;
+      padding:28px 18px 40px;
+    }
+    h1{
+      margin:10px 0 18px;
+      font-size:28px;
+      letter-spacing:0.2px;
+    }
+    .sub{
+      color:var(--muted);
+      margin:0 0 22px;
+      font-size:15px;
+    }
+    .list{
+      display:grid;
+      gap:12px;
+    }
+    a.card{
+      display:block;
+      text-decoration:none;
+      border:1px solid var(--line);
+      background:var(--card);
+      border-radius:14px;
+      padding:14px 14px;
+      color:var(--text);
+    }
+    a.card:hover{
+      border-color:#3a3a48;
+    }
+    .title{
+      font-weight:700;
+      margin:0 0 6px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:14px;
+      margin:0;
+    }
+    .footer{
+      margin-top:22px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .footer a{ color:var(--accent); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Название новеллы</h1>
+    <p class="sub">Читай по главам - открывается в браузере, без скачивания.</p>
+
+    <div class="list">
+      <a class="card" href="chapter1.html">
+        <p class="title">Глава 1</p>
+        <p class="meta">Пролог + системное уведомление</p>
+      </a>
+    </div>
+
+    <div class="footer">
+      Если хочешь - добавлю переключатель светлая/тёмная тема и кнопки “следующая/предыдущая”.
+    </div>
+  </div>
+</body>
+</html>
