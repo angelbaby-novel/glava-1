@@ -4,115 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Глава 1</title>
-
-  <style>
-    body{
-      margin:0;
-      background:#ffffff;
-      color:#111;
-      font-family:"Times New Roman", Georgia, serif;
-      line-height:1.6;
-      font-size:18px;
-      -webkit-font-smoothing:antialiased;
-      text-rendering:optimizeLegibility;
-    }
-
-    .wrap{
-      max-width:42rem;      /* адаптивно, но не растягивается слишком широко */
-      margin:0 auto;
-      padding:30px 18px 44px;
-    }
-
-    .top{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:14px;
-    }
-
-    .top a{
-      color:#2f57ff;
-      text-decoration:none;
-      font-size:14px;
-    }
-
-    .top span{
-      color:#666;
-      font-size:13px;
-    }
-
-    h1{
-      margin:10px 0 18px;
-      font-size:24px;
-      font-weight:700;
-      text-align:center;
-    }
-
-    /* обычные абзацы - красная строка */
-    p{
-      margin:0 0 16px;
-      text-align:left;
-      text-indent:2em;      /* красная строка */
-    }
-
-    /* ник по центру */
-    .nick{
-      text-align:center;
-      text-indent:0;
-      font-weight:700;
-      margin:18px 0 12px;
-    }
-
-    /* рамка */
-    .frame{
-      border:1.5px solid #333;
-      padding:18px 14px;
-      margin:28px auto 20px;
-    }
-
-    /* текст внутри рамки - по центру, без красной строки */
-    .frame p{
-      text-align:center;
-      text-indent:0;
-      margin:0;
-      font-weight:700;
-    }
-
-    .system{
-      border:1.2px solid #333;
-      padding:14px 14px;
-      margin:22px 0;
-    }
-
-    .system .label{
-      font-weight:700;
-      text-align:center;
-      margin:0 0 8px;
-    }
-
-    .system p{
-      margin:0;
-      text-indent:0;
-      text-align:center; /* если хочешь системку тоже по центру */
-    }
-
-    .nav{
-      display:flex;
-      justify-content:space-between;
-      margin-top:26px;
-      gap:12px;
-    }
-
-    .nav a{
-      color:#2f57ff;
-      text-decoration:none;
-      font-size:14px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <button class="theme-btn" onclick="toggleTheme()" aria-label="Переключить тему" title="Тема">
+    <span class="theme-ico" id="themeIcon">🌙</span>
+  </button>
+
   <div class="wrap">
     <div class="top">
       <a href="index.html">← к оглавлению</a>
@@ -145,11 +44,8 @@
       <p class="label">[SYSTEM]</p>
       <p>УважайЭтикет, мы вас ждали. Вот список обновлений на этой неделе!</p>
     </div>
-
-    <div class="nav">
-      <a href="index.html">← оглавление</a>
-      <span></span>
-    </div>
   </div>
+
+  <script src="theme.js"></script>
 </body>
 </html>
