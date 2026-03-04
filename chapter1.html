@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Глава 1</title>
+  <style>
+    :root{
+      --bg:#0f0f12;
+      --paper:#121218;
+      --text:#f2f2f2;
+      --muted:#b9b9c4;
+      --line:#2a2a33;
+      --box:#16161d;
+      --accent:#8aa2ff;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height:1.9;
+      font-size:18px;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    .wrap{
+      max-width:760px;
+      margin:0 auto;
+      padding:26px 18px 40px;
+    }
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:18px;
+    }
+    .top a{
+      color:var(--accent);
+      text-decoration:none;
+      font-size:14px;
+    }
+    h1{
+      margin:10px 0 18px;
+      font-size:26px;
+      letter-spacing:0.2px;
+    }
+    .text{
+      background:transparent;
+    }
+    p{
+      margin:0 0 16px;
+    }
+    .nick{
+      color:var(--muted);
+      font-weight:700;
+    }
+    .system{
+      border:1px solid var(--line);
+      background:var(--box);
+      border-radius:14px;
+      padding:14px 14px;
+      margin:22px 0;
+    }
+    .system .label{
+      font-weight:800;
+      letter-spacing:0.3px;
+      margin-bottom:6px;
+    }
+    .system .msg{
+      color:var(--text);
+      margin:0;
+    }
+    .hr{
+      height:1px;
+      background:var(--line);
+      margin:22px 0;
+    }
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      margin-top:22px;
+      gap:12px;
+    }
+    .nav a{
+      color:var(--accent);
+      text-decoration:none;
+      font-size:14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <a href="index.html">← к оглавлению</a>
+      <span style="color:var(--muted); font-size:13px;">Глава 1</span>
+    </div>
+
+    <h1>Глава 1</h1>
+
+    <div class="text">
+      <p>После экрана запуска перед Увоном появился его персонаж - здоровенный, прям в глаза бросается. Мускулы - как будто вырублены топором, тело поджарое. Когда персонаж двигался, по коже то проступала, то исчезала чешуя. Длинные, вертикально разрезанные зрачки в шрамах и клыки, которые едва виднелись из-под губ, плюс крылья - это всё выдавало класс Увона: "драконий рыцарь".</p>
+
+      <p class="nick">[УважайЭтикет]</p>
+
+      <p>Под персонажем ярко мигал ник - будто просил "ну нажми уже".</p>
+
+      <p>Увон, задумчиво прикусив губу, уставился на персонажа, постучал пальцами по столу и всё-таки ткнул "вход".</p>
+
+      <p>Как только он выбрал персонажа, драконий рыцарь, державший огромный меч, опустил клинок - и экран тут же сменился.</p>
+
+      <div class="hr"></div>
+
+      <p><b>Боги ушли - мир ушёл под воду</b></p>
+
+      <p>Увона встретила густая темнота. В мрачной толще океана одна за другой поднимались пузырьки. Камера медленно подсветила крошечный клочок суши, и на экране всплыли пафосные строки.</p>
+
+      <p>Лишь Спаситель может поднять Veil и вернуть тело бога........</p>
+
+      <p>Дзынь - раздался звук уведомления. Увон сам не заметил, как тихо усмехнулся.</p>
+
+      <div class="system">
+        <div class="label">[SYSTEM]</div>
+        <p class="msg">УважайЭтикет, мы вас ждали. Вот список обновлений на этой неделе!</p>
+      </div>
+    </div>
+
+    <div class="nav">
+      <a href="index.html">← оглавление</a>
+      <span></span>
+    </div>
+  </div>
+</body>
+</html>
